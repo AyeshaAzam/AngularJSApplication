@@ -1,0 +1,71 @@
+
+/*******************************************
+GENERAL
+*******************************************/
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fff;
+    color: #999;
+}
+#wrapper{
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 5%; /* space inside , 5%- left and right */
+    background-color: #eee;
+}
+
+table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+  font-family: Arial;
+  font-size: 16px;
+}
+
+td {
+  border: 2px solid black;
+  padding: 5px;
+}
+
+.imageCell {
+  text-align: center;
+}
+
+.imageCell img{
+  height: 20px;
+  width: 20px;
+  margin-top: 3px;
+}
+
+.imageCell p{
+  font-size: 10px;
+  /*padding-top:0;*/
+  margin-top: 0;
+}
+th {
+  border: 2px solid black;
+  padding: 5px;
+  text-align: left;
+  font-weight:700;
+  font-size: 20px;
+  color:white;
+}
+
+thead {
+ padding: 8px;
+ line-height: 1.42857143;
+ vertical-align: top;
+ border-top: 2px solid #ddd;
+ border-bottom: 2px solid #ddd;
+ background-color: royalblue;
+}
+
+h2{
+  text-align: center;
+}
+/*table > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #ddd;
+
+}*/

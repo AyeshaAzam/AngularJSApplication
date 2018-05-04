@@ -1,0 +1,45 @@
+<!-- run live server, works faster: http://localhost:3000/ -->
+
+<!DOCTYPE html>
+<html ng-app ="myModule">
+ <head>
+   <meta charset="utf-8">
+   <title> Ayesha Azam | Made in Angular</title>
+   <script src="scripts\angular.js"></script>
+   <script src="scripts\myScript.js"></script>
+   <link rel="stylesheet"  href="css/style.css">
+</head>
+ <body> <!-- ng-app directive is a entry point -->
+    <div id="wrapper" ng-controller="myController">
+        <table>
+            <thead>
+              <tr>
+                  <th>Programming language</th>
+                  <th>Likes</th>
+                  <th>Dislikes</th>
+                  <th>Like</th>
+                  <th>Dislike</th>
+              </tr>
+            </thead>
+            <tbody>
+              <h2>Simple project: liked and dislike using AngularJS</h2>
+              <hr>
+              <br />
+               <tr ng-repeat="language in ProgrammingLang">
+                   <td>{{language.name}}</td>
+                   <td>{{language.likes}}</td>
+                   <td>{{language.dislikes}}</td>
+                   <td class="imageCell">
+                    <img src="images/thumb-up32.png"  alt="thumb-up icon" ng-click="incrementLikes(language)"/>
+                    <p> You liked Me! </p>
+                   </td>
+                     <td class="imageCell">
+                     <img src="images/thumb-down32.png"  alt="thumb-down icon" ng-click="incrementDislikes(language)"/>
+                     <p> You Disliked Me! </p>
+                   </td>
+               </tr>
+            </tbody>
+          </table>
+     </div>
+  </body>
+  </html>
